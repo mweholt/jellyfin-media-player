@@ -47,7 +47,7 @@ KonvergoWindow::KonvergoWindow(QWindow* parent) :
   m_osxPresentationOptions(0)
 {
   // NSWindowCollectionBehaviorFullScreenPrimary is only set on OSX if Qt::WindowFullscreenButtonHint is set on the window.
-  setFlags(flags() | Qt::WindowFullscreenButtonHint);
+  setFlags(flags() | Qt::FramelessWindowHint);
 
   m_infoTimer = new QTimer(this);
   m_infoTimer->setInterval(1000);
